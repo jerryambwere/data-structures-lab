@@ -45,7 +45,7 @@ def print_spiciest_foods(spicy_foods):
         print(f"{food['name']} ({food['cuisine']}) | Heat Level: {heat_level}")
 
 # 6. Function to get the average heat level
-def average_heat_level(spicy_foods):
+def get_average_heat_level(spicy_foods):
     if not spicy_foods:  # Check for empty list to avoid division by zero
         return 0
     total_heat = sum(food['heat_level'] for food in spicy_foods)
